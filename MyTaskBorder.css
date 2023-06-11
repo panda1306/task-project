@@ -1,0 +1,78 @@
+body {
+  background-image: url(imges/tile.jpg);
+}
+
+.header {
+  font-family: fantasy;
+  display: flex;
+  justify-content: center;
+  color: rgba(9, 59, 41, 0.721);
+  
+}
+
+.container {
+  background-image: url(imges/formbg.jpg);
+  padding: 0 100px;
+}
+
+input {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: justify;
+  text-decoration: none;
+   font-size: 14px;
+  margin: 15px 2px;
+  cursor: pointer;
+}
+
+.tasks-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task-container {
+  animation: fadeIn 3s;
+  opacity: 1;
+   background-image: url(imges/notebg.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 240px;
+  width: 190px;
+  padding: 30px;  
+  max-width: 190px; 
+  margin: 50px;
+}
+
+.text {
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 120px;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.task-container:hover .closeIcon {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  animation: fadeIn 1.2s;
+}
+
+.noteFooter {
+  font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

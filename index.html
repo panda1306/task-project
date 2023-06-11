@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="MyTaskBorder.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <script defer src="./MyTaskBoard.js"></script>    
+</head>
+
+<body>
+    <h1 class="header">My Task Board</h1>
+    <form id="form">
+        
+        
+        <div class="container mt-4">
+            
+            
+            <div class="form-group">
+                <label for="mission"><b>Mission</b></label>
+                <textarea class="form-control" id="mission" placeholder="Write Your Mission" required ></textarea>
+            </div>              
+            
+            <div class="form-group">
+                <label for="date"><b>Target Date</b></label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time"><b>Deadline</b></label>
+                    <input type="time" class="form-control" id="time" required>
+                </div>
+
+                <div>
+                    <input type="submit" value="Add Note" class="btn btn-primary border mt-2 form-control" >
+                    <input type="reset" value="Refresh" class="btn btn-light border mt-2 form-control">
+                </div>
+                                              
+            
+        </div>
+        <div id="tasks-container" class="tasks-container">
+            
+            </div>
+          
+          
+        
+        
+    </form>
+    
+    
+    
+    
+</body>
+
+</html>
